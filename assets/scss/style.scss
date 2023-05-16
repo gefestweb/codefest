@@ -1,0 +1,32 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+@import 'home';
+
+body {
+    overflow-x: hidden;
+    font-family: 'VKSansDisplay';
+    font-style: normal;
+}
+
+.container {
+    width: 650px;
+    max-width: calc(100% - 40px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FF7700;
+}
+
+.desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}

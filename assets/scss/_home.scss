@@ -1,0 +1,40 @@
+.container {
+    position: relative;
+}
+.start {    
+    &__wrapper {
+        padding: 20px 0 30px;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+/*         p {
+            &:nth-child(2) {
+               mt 
+            }
+        } */
+    }
+    &__btn {
+        width: calc(100% - 1px);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 11px 10px 23px;
+        background: #000000;
+        border-radius: 50px;
+        color: white;
+    }
+}
+.back-img {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: -1;
+    height: 100%;
+}
