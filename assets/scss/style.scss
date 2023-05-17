@@ -5,6 +5,7 @@
 @import 'quiz';
 @import 'autorization';
 @import 'introduce';
+@import 'result';
 
 body {
     overflow-x: hidden;
@@ -25,12 +26,14 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     color: #FF7700;
+    &--white {
+        color: #fff;
+    }
 }
 
 .desc {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    text-transform: capitalize;
     color: #FFFFFF;
 }

@@ -189,7 +189,7 @@ img {
 .back-img {
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 46px;
   z-index: -1;
   height: 100vh;
 }
@@ -204,12 +204,13 @@ img {
 .hello__about {
   margin-top: 23px;
   width: 100%;
-  padding: 34px 52px 24px 20px;
+  padding: 34px 0 24px;
   background-color: black;
   border-radius: 32px;
 }
 .hello__desc {
   margin-top: 22px;
+  text-transform: unset;
 }
 .hello__info-text {
   margin-top: 35px;
@@ -243,8 +244,8 @@ img {
   font-size: 13px;
   text-transform: capitalize;
   color: #FF7700;
-  height: 22px;
-  width: calc(33.33% + 26px);
+  height: 26px;
+  width: 100%;
 }
 .hello__info-prize {
   margin-top: 12px;
@@ -254,7 +255,7 @@ img {
   text-align: center;
   text-transform: lowercase;
   color: #FF7700;
-  width: 80%;
+  width: 90%;
 }
 .hello__btn {
   margin-top: 22px;
@@ -288,6 +289,7 @@ img {
   padding: 20px 0 30px;
   position: relative;
   overflow: hidden;
+  height: 100vh;
 }
 .quiz__img-wrapper {
   width: 100%;
@@ -301,6 +303,7 @@ img {
   margin-top: 14px;
   padding: 53px 0 34px;
   width: 100%;
+  height: 100%;
   background-color: black;
   border-top-left-radius: 32px;
   border-top-right-radius: 32px;
@@ -423,6 +426,7 @@ img {
   position: absolute;
   bottom: 0;
   padding: 53px 0 53px;
+  height: unset;
 }
 .autoriz__alert {
   color: white;
@@ -473,6 +477,21 @@ img {
   z-index: unset;
 }
 
+.result {
+  margin-top: 200px;
+  overflow: hidden;
+  height: 100vh;
+}
+.result__title {
+  margin-top: 66px;
+}
+.result__description {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FF7700;
+}
+
 body {
   overflow-x: hidden;
   font-family: "VKSansDisplay";
@@ -493,11 +512,13 @@ body {
   text-transform: uppercase;
   color: #FF7700;
 }
+.title--white {
+  color: #fff;
+}
 
 .desc {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  text-transform: capitalize;
   color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

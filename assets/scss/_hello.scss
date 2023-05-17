@@ -7,12 +7,13 @@
     &__about {
         margin-top: 23px;
         width: 100%;
-        padding: 34px 52px 24px 20px;
+        padding: 34px 0 24px;
         background-color: black;
         border-radius: 32px;
     }
     &__desc {
         margin-top: 22px;
+        text-transform: unset;
     }
     &__info {
         &-text {
@@ -49,8 +50,8 @@
             font-size: 13px;
             text-transform: capitalize;
             color: #FF7700;
-            height: 22px;
-            width: calc(33.33% + 26px);
+            height: 26px;
+            width: 100%;
         }
         &-prize {
             margin-top: 12px;
@@ -60,7 +61,7 @@
             text-align: center;
             text-transform: lowercase;
             color: #FF7700;
-            width: 80%;
+            width: 90%;
         }
     }
     &__btn {
