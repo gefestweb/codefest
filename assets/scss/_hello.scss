@@ -1,0 +1,75 @@
+.hello {
+    margin-top: 200px;
+    padding: 20px 0 30px;
+    &__title {
+        margin-top: 27px;
+    }
+    &__about {
+        margin-top: 23px;
+        width: 100%;
+        padding: 34px 52px 24px 20px;
+        background-color: black;
+        border-radius: 32px;
+    }
+    &__desc {
+        margin-top: 22px;
+    }
+    &__info {
+        &-text {
+            margin-top: 35px;
+            p {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                text-transform: capitalize;
+                color: #FF7700;
+            }
+        }
+        &-data {
+            margin-top: 22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+    
+        }
+        &-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(33% - 7px);
+        }
+        &-points {
+            // width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            border-radius: 11px;
+            background: rgba(255, 255, 255, 0.2);
+            font-size: 13px;
+            text-transform: capitalize;
+            color: #FF7700;
+            height: 22px;
+            width: calc(33.33% + 26px);
+        }
+        &-prize {
+            margin-top: 12px;
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 11px;
+            text-align: center;
+            text-transform: lowercase;
+            color: #FF7700;
+            width: 80%;
+        }
+    }
+    &__btn {
+        margin-top: 22px;
+    }
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

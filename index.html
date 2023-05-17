@@ -11,7 +11,7 @@
         <div class="start">
             <div class="container">
                 <div class="start__wrapper">
-                    <img class="back-img" src="assets/img/ico/back-img.png" alt="">
+                    <img class="back-img" src="assets/img/ico/Group 8.svg" alt="">
                     <div class="logo"><img src="assets/img/ico/ok-tech-logo.svg" alt=""></div>
                     <div class="start__text title">
                         <p>Code Fest<br>2023</p>
@@ -28,29 +28,27 @@
         <div class="hello">
             <div class="container">
                 <div class="header">
-                    <img class="back-img" src="assets/img/ico/ok-tech-logo.svg" alt="">
+                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
                     <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
                 </div>
-                <p class="title">OKtechnology</p>
+                <p class="title hello__title">OKtechnology</p>
             </div>
             <div class="hello__about">
                 <div class="container">
                     <p class="title">Увлеченные технологиями</p>
-                    <p class="desc">Привет! мы собрали 10 фактов 
+                    <p class="desc hello__desc">Привет! мы собрали 10 фактов 
                         о технологиях в Одноклассниках 
                         и не только. Собери онлайн-пазл 
                         с верными фактами и получи фирменный мерч. 
                         Сыграть можно только один раз.
                     </p>
                     <div class="hello__info-text">
-                        <p>Игра беспроигрышная:
-                            количество верных ответов
-                        </p>
+                        <p>Игра беспроигрышная: <br>Количество верных ответов</p>
                         <div class="hello__info-data">
                             <div class="hello__info-top">
                                 <div class="hello__info-points">10 - 8</div>
-                                <div class="hello__info-prize">Игра беспроигрышная:
-                                    количество верных ответов</div>
+                                <div class="hello__info-prize">ты получишь 
+                                    бутылку для воды</div>
                             </div>
                             <div class="hello__info-top">
                                 <div class="hello__info-points">7 - 5</div>
@@ -66,12 +64,109 @@
                 </div>
             </div>
             <div class="container">
-                <div class="hello__btn">
+                <div class="start__btn hello__btn">
                     <p>Давай Знакомиться</p>
                     <img src="assets/img/ico/arrow-right.svg" alt="">
                 </div>
             </div>            
         </div>
+        <div class="autoriz">
+            <div class="container">
+                <div class="header">
+                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
+                    <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
+                </div>
+                <p class="title autoriz__title">Давай познакомимся!</p>
+            </div>
+            <img class="back-img" src="assets/img/ico/Group 8.svg" alt="">
+            <div class="autoriz__bcg quiz__bcg">
+                <div class="container">
+                    <p class="autoriz__alert">Авторизуйтесь через ТГ-Бота</p>
+                    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="TestingTheAppBot" data-size="large" data-userpic="false" data-radius="20" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+                    <script type="text/javascript">
+                    function onTelegramAuth(user) {
+                        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        <div class="introduce">
+            <div class="container">
+                <div class="introduce__wrapper">
+                    <img class="back-img back-grey" src="assets/img/ico/back-grey.svg" alt="">
+                    <div class="introduce__head">
+                        <div class="header">
+                            <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
+                            <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
+                        </div>
+                        <p class="title introduce__title">Давай познакомимся!</p>
+                    </div>
+                    <form action="" method="post" id="username">
+                        <label for="username" class="introduce__input-wrapper">
+                            <span>Ваше имя</span> 
+                            <input type="text" placeholder="User" name="username">
+                        </label>
+                        <button type="submit" class="start__btn quiz__btn" onclick="handleSubmit(event)">
+                            <p>Далее</p>
+                            <img src="assets/img/ico/arrow-right.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+            <img class="orange-c" src="assets/img/ico/orange-c.png" alt="">
+            <div class="container">
+                <div class="header">
+                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
+                    <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
+                </div>
+                <div class="quiz__img-wrapper">
+                    <img class="quiz__img" src="assets/img/1-q.png" alt="">
+                </div>
+            </div>
+            <div class="quiz__bcg">
+                <form action="ссылка_на_обработчик" method="POST" id="quizForm">
+                    <div class="container">
+                      <p class="question">Какой процент сервисов в ОК написан на Java?</p>
+                      <div class="answers__container">
+                        <div class="answers__item" onclick="activateRadio(this)">
+                          <label for="answer1">
+                            <input type="radio" id="answer1" name="answer" value="70%" class="answer-input">
+                            <span class="answer answers__answer">70%</span>
+                          </label>
+                        </div>
+                        <div class="answers__item" onclick="activateRadio(this)">
+                          <label for="answer2">
+                            <input type="radio" id="answer2" name="answer" value="99%" class="answer-input">
+                            <span class="answer answers__answer">99%</span>
+                          </label>
+                        </div>
+                        <div class="answers__item" onclick="activateRadio(this)">
+                          <label for="answer3">
+                            <input type="radio" id="answer3" name="answer" value="меньше 50%" class="answer-input">
+                            <span class="answer answers__answer">меньше 50%</span>
+                          </label>
+                        </div>
+                        <div class="answers__item" onclick="activateRadio(this)">
+                          <label for="answer4">
+                            <input type="radio" id="answer4" name="answer" value="более 50%" class="answer-input">
+                            <span class="answer answers__answer">более 50%</span>
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="start__btn quiz__btn" onclick="handleSubmit(event)">
+                          <p>Далее</p>
+                          <img src="assets/img/ico/arrow-right.svg" alt="">
+                      </button>
+                    </div>
+                  </form>
+            </div>
+        </div>
     </div>
 </body>
+<script src="assets/js/script.js"></script>
 </html>

@@ -1,9 +1,10 @@
 .container {
     position: relative;
 }
-.start {    
+.start {
+    overflow: hidden;
+    padding: 20px 0 30px;
     &__wrapper {
-        padding: 20px 0 30px;
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -29,6 +30,10 @@
         background: #000000;
         border-radius: 50px;
         color: white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: capitalize;
     }
 }
 .back-img {
@@ -36,5 +41,5 @@
     right: 0;
     top: 20px;
     z-index: -1;
-    height: 100%;
+    height: 100vh;
 }
