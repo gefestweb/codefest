@@ -343,11 +343,10 @@ img {
   margin-top: 30px;
   background-color: #fff;
   color: #000;
-  opacity: 0.3;
   transition: 0.1s;
 }
-.quiz__btn--active {
-  opacity: 1;
+.quiz__btn_opac {
+  opacity: 0.3;
 }
 
 .orange-c {
@@ -372,6 +371,39 @@ img {
   max-width: 70%;
   margin-top: 15px;
   margin-left: auto;
+}
+
+.cross-circle {
+  width: 43px;
+  height: 43px;
+  background-color: transparent;
+  position: relative;
+  border-radius: 50%;
+}
+.cross-circle--active {
+  background-color: #FF7700;
+  transition: background-color 0.1s ease;
+}
+.cross-circle::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.cross-circle::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .autoriz {

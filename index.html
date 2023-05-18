@@ -122,7 +122,9 @@
             <div class="container">
                 <div class="header">
                     <img class="logo" src="assets/img/ico/ok-logo-wh.svg" alt="">
-                    <a href=""><img src="assets/img/ico/cross.svg" alt=""></a>
+                    <a href="">
+                        <div class="cross-circle"></div>
+                    </a>
                 </div>
             </div>
             <img class="orange-chain" src="assets/img/ico/orange-chain.svg" alt="">
@@ -132,20 +134,20 @@
                     <p class="question">Какой процент сервисов в ОК написан на Java?</p>
                 </div>
                 <div class="answer-wrapper">
-                    <div class="answer" onclick="activateRadio(this)">
+                    <div class="answer" onchange="activateRadio(this)">
                         <input type="radio" id="answer1" name="answer" value="70%">
                         <label for="answer1">70%</label>
                     </div>
-                    <div class="answer" onclick="activateRadio(this)">
+                    <div class="answer" onchange="activateRadio(this)">
                         <input type="radio" id="answer2" name="answer" value="99%">
                         <label for="answer2">99%</label>
                     </div>
-                    <div class="answer" onclick="activateRadio(this)">
+                    <div class="answer" onchange="activateRadio(this)">
                         <input type="radio" id="answer3" name="answer" value="Меньше 50%">
                         <label for="answer3">Меньше 50%</label>
                     </div>
                 </div>
-                <button type="submit" class="start__btn quiz__btn">
+                <button type="submit" class="start__btn quiz__btn quiz__btn_opac">
                     <p>Далее</p>
                     <img src="assets/img/ico/arrow-right.svg" alt="">
                 </button>
