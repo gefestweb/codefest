@@ -1,10 +1,22 @@
-/* function handleSubmit(event) {
-    event.preventDefault();
-    const form = document.getElementById("quizForm");
-    const selectedAnswer = form.elements["answer"].value;
-    console.log("Выбранный ответ:", selectedAnswer);
-    form.submit();
-} */
+function handleSubmit(event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+    const form = event.target;
+    const selectedAnswer = form.querySelector('input[name="answer"]:checked');
+    if (selectedAnswer) {
+      const answerValue = selectedAnswer.value;
+      console.log('Отправлен ответ:', answerValue);
+    } else {
+      console.log('Не выбран ответ');
+    }
+
+    // Другие действия, связанные с отправкой формы
+  }
+
+  function activateRadio(element) {
+    const radio = element.querySelector('input[type="radio"]');
+    radio.checked = true;
+  }
 
 /* function activateRadio(element) {
     const radio = element.querySelector('input[type="radio"]');
