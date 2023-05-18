@@ -119,53 +119,38 @@
         </div>
 
         <div class="quiz">
-            <img class="orange-c" src="assets/img/ico/orange-c.png" alt="">
             <div class="container">
                 <div class="header">
-                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
-                    <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
-                </div>
-                <div class="quiz__img-wrapper">
-                    <img class="quiz__img" src="assets/img/1-q.png" alt="">
+                    <img class="logo" src="assets/img/ico/ok-logo-wh.svg" alt="">
+                    <a href=""><img src="assets/img/ico/cross.svg" alt=""></a>
                 </div>
             </div>
-            <div class="quiz__bcg">
-                <form action="ссылка_на_обработчик" method="POST" id="quizForm">
-                    <div class="container">
-                      <p class="question">Какой процент сервисов в ОК написан на Java?</p>
-                      <div class="answers__container">
-                        <div class="answers__item" onclick="activateRadio(this)">
-                          <label for="answer1">
-                            <input type="radio" id="answer1" name="answer" value="70%" class="answer-input">
-                            <span class="answer answers__answer">70%</span>
-                          </label>
-                        </div>
-                        <div class="answers__item" onclick="activateRadio(this)">
-                          <label for="answer2">
-                            <input type="radio" id="answer2" name="answer" value="99%" class="answer-input">
-                            <span class="answer answers__answer">99%</span>
-                          </label>
-                        </div>
-                        <div class="answers__item" onclick="activateRadio(this)">
-                          <label for="answer3">
-                            <input type="radio" id="answer3" name="answer" value="меньше 50%" class="answer-input">
-                            <span class="answer answers__answer">меньше 50%</span>
-                          </label>
-                        </div>
-                        <div class="answers__item" onclick="activateRadio(this)">
-                          <label for="answer4">
-                            <input type="radio" id="answer4" name="answer" value="более 50%" class="answer-input">
-                            <span class="answer answers__answer">более 50%</span>
-                          </label>
-                        </div>
-                      </div>
-                      <button type="submit" class="start__btn quiz__btn" onclick="handleSubmit(event)">
-                          <p>Далее</p>
-                          <img src="assets/img/ico/arrow-right.svg" alt="">
-                      </button>
+            <img class="orange-chain" src="assets/img/ico/orange-chain.svg" alt="">
+            <form class="container" onsubmit="handleSubmit(event)">
+                <div class="question-wrapper">
+                    <p class="question-title"><span class="question-id">1</span>вопрос</p>
+                    <p class="question">Какой процент сервисов в ОК написан на Java?</p>
+                </div>
+                <div class="answer-wrapper">
+                    <div class="answer" onclick="activateRadio(this)">
+                        <input type="radio" id="answer1" name="answer" value="70%">
+                        <label for="answer1">70%</label>
                     </div>
-                  </form>
-            </div>
+                    <div class="answer" onclick="activateRadio(this)">
+                        <input type="radio" id="answer2" name="answer" value="99%">
+                        <label for="answer2">99%</label>
+                    </div>
+                    <div class="answer" onclick="activateRadio(this)">
+                        <input type="radio" id="answer3" name="answer" value="Меньше 50%">
+                        <label for="answer3">Меньше 50%</label>
+                    </div>
+                </div>
+                <button type="submit" class="start__btn quiz__btn">
+                    <p>Далее</p>
+                    <img src="assets/img/ico/arrow-right.svg" alt="">
+                </button>
+            </form>
+            
         </div>
         <div class="result">
             <div class="container">

@@ -1,16 +1,46 @@
 .question {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 13px;
+    line-height: 16px;
     text-transform: uppercase;
-    color: #FF7700;
+    color: #fff;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        margin-top: 7px;
+    }
+    &-title {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #fff;
+    }
 }
 .answer {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-transform: capitalize;
-    color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 39.5px;
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 38px;
+    }
+    & input {
+        display: none;
+    }
 
 }
 
@@ -20,6 +50,7 @@
     position: relative;
     overflow: hidden;
     height: 100vh;
+    background-color: #000;
     &__img-wrapper {
         width: 100%;
         height: 100%;
@@ -41,104 +72,14 @@
         margin-top: 30px;
         background-color: #fff;
         color: #000;
-    }
-}
-.answers {
-    &__container {
-        margin-top: 43px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        column-gap: 10px;
-        row-gap: 9px;
-    }
-    &__item {
-        position: relative;
-        width: calc(50% - 10px);
-        height: 92px;
-        background-color: white;
-        color: black;
-        border-radius: 12px;
-        display: flex;
-        align-items:center;
-        justify-content: center;
-        cursor: pointer;
-
-        & input {
-            // display: none;
-        }
-
-        &:nth-child(1) {
-            &::after {
-                content: "A";
-                position: absolute;
-                top: 4px;
-                left: 6px;
-                border-radius: 50%;
-                background-color: #000;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px;
-                color: #fff;
-                width: 18px;
-                height: 18px;
-            }
-        }
-        &:nth-child(2) {
-            &::after {
-                content: "B";
-                position: absolute;
-                top: 4px;
-                left: 6px;
-                border-radius: 50%;
-                background-color: #000;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px;
-                color: #fff;
-                width: 18px;
-                height: 18px;
-            }
-        }
-        &:nth-child(3) {
-            &::after {
-                content: "C";
-                position: absolute;
-                top: 4px;
-                left: 6px;
-                border-radius: 50%;
-                background-color: #000;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px;
-                color: #fff;
-                width: 18px;
-                height: 18px;
-            }
-        }
-        &:nth-child(4) {
-            &::after {
-                content: "D";
-                position: absolute;
-                top: 4px;
-                left: 6px;
-                border-radius: 50%;
-                background-color: #000;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 10px;
-                color: #fff;
-                width: 18px;
-                height: 18px;
-            }
+        opacity: 0.3;
+        transition: 0.1s;
+        &--active {
+            opacity: 1;
         }
     }
 }
+
 .orange-c {
     position: absolute;
     max-width: 160%;
@@ -151,4 +92,11 @@
 .selected {
     background-color: #FF7700;
     transition: background-color 0.1s ease;
+    border-color: #FF7700;
+}
+.orange-chain {
+    width: 100%;
+    max-width: 70%;
+    margin-top: 15px;
+    margin-left: auto;
 }
