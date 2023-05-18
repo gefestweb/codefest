@@ -1,43 +1,42 @@
 .hello {
     margin-top: 200px;
     padding: 20px 0 30px;
-    &__title {
-        margin-top: 27px;
+    background-color: #000;
+    height: 100vh;
+    &__mid-content {
+        margin-top: 70px;
+        p.fz10.orange-txt {
+            margin-top: 35px;
+        }
+        p.fz13.orange-txt {
+            margin-top: 5px;
+        }
     }
-    &__about {
-        margin-top: 23px;
-        width: 100%;
-        padding: 34px 0 24px;
-        background-color: black;
-        border-radius: 32px;
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        // margin-top: 27px;
     }
     &__desc {
         margin-top: 22px;
         text-transform: unset;
     }
     &__info {
-        &-text {
-            margin-top: 35px;
-            p {
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 16px;
-                text-transform: capitalize;
-                color: #FF7700;
-            }
-        }
         &-data {
-            margin-top: 22px;
+            margin-top: 28px;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-    
+            flex-direction: column;
+            gap: 20px;
+            max-width: 230px;
         }
         &-top {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            width: calc(33% - 7px);
+            gap: 37px;
         }
         &-points {
             // width: 100%;
@@ -50,22 +49,35 @@
             font-size: 13px;
             text-transform: capitalize;
             color: #FF7700;
-            height: 26px;
+            height: 25px;
             width: 100%;
+            max-width: 54px;
         }
         &-prize {
-            margin-top: 12px;
             font-weight: 400;
-            font-size: 9px;
-            line-height: 11px;
-            text-align: center;
+            font-size: 13px;
+            line-height: 16px;
+            text-align: left;
             text-transform: lowercase;
             color: #FF7700;
             width: 90%;
         }
     }
     &__btn {
-        margin-top: 22px;
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        background-color: #51ABEA;
+        border-radius: 11111px;
+        width: 100%;
+        height: 62px;
+        align-items:center;
+        justify-content: flex-start;
+        padding-left: 25px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 18px;
+        // margin-top: 45px;
     }
 }
 .header {

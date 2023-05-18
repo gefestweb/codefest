@@ -52,3 +52,12 @@ function activateRadio(element) {
         activateNextBtn();
   });
    */
+
+  function toggleCheckbox(checkbox) {
+    const customCheckbox = checkbox.nextElementSibling;
+    if (checkbox.checked) {
+      customCheckbox.classList.add('checked');
+    } else {
+      customCheckbox.classList.remove('checked');
+    }
+  }

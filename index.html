@@ -11,39 +11,46 @@
         <div class="start">
             <div class="container">
                 <div class="start__wrapper">
-                    <img class="back-img" src="assets/img/ico/Group 8.svg" alt="">
-                    <div class="logo"><img src="assets/img/ico/ok-tech-logo.svg" alt=""></div>
-                    <div class="start__text title">
-                        <p>Code Fest<br>2023</p>
-                        <p>spb<br>community<br>professional<br>event</p>
-                        <p>ok<br>is ok</p>
+                    <div class="">
+                        <div class="logo"><img src="assets/img/ico/ok-tech-logo.svg" alt=""></div>
+                        <img class="back-img" src="assets/img/ico/Group8.svg" alt="">
+                        <img class="code-fest-ico" src="assets/img/ico/code-fest-logo.svg" alt="">
+                        <p class="start__text title">Игра увлеченные технологиями</p>
                     </div>
-                    <div class="start__btn">
-                        <p>Начать</p>
-                        <img src="assets/img/ico/arrow-right.svg" alt="">
+                    <div class="start__btns">
+                        <div class="start__btn quiz__btn">
+                            <p>Хочу работать в ОК</p>
+                            <div class="work-ico">
+                                <img class="" src="assets/img/ico/work-ico.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="start__btn">
+                            <p>Начать</p>
+                            <img src="assets/img/ico/arrow-right.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="hello">
-            <div class="container">
-                <div class="header">
-                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
-                    <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
-                </div>
-                <p class="title hello__title">OKtechnology</p>
-            </div>
-            <div class="hello__about">
-                <div class="container">
-                    <p class="title">Увлеченные технологиями</p>
-                    <p class="desc hello__desc">Привет! Мы собрали 10 фактов 
-                        о технологиях в Одноклассниках 
-                        и не только. Собери онлайн-пазл 
-                        с верными фактами и получи фирменный мерч. 
-                        Сыграть можно только один раз.
-                    </p>
-                    <div class="hello__info-text">
-                        <p>Игра беспроигрышная: <br>Количество верных ответов</p>
+            <div class="container flex-sp-btw h100p">
+                <div class="hello__wrapper">
+                    <div class="header">
+                        <img class="logo" src="assets/img/ico/ok-logo-wh.svg" alt="">
+                        <div class="cross-circle"></div>
+                    </div>
+                    <div class="hello__mid-content">
+                        <div class="hello__text">
+                            <p class="title hello__title">Увлеченные технологиями</p>
+                            <p class="desc hello__desc">Привет! Мы собрали 10 фактов 
+                                о технологиях в Одноклассниках 
+                                и не только. Собери онлайн-пазл 
+                                с верными фактами и получи фирменный мерч. 
+                                Сыграть можно только один раз.
+                            </p>
+                        </div>
+                        <p class="fz10 orange-txt">Игра беспроигрышная</p>
+                        <p class="fz13 orange-txt">Количество верных ответов:</p>
                         <div class="hello__info-data">
                             <div class="hello__info-top">
                                 <div class="hello__info-points">10 - 8</div>
@@ -62,41 +69,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="start__btn hello__btn">
-                    <p>Давай Знакомиться</p>
-                    <img src="assets/img/ico/arrow-right.svg" alt="">
+                <div class="hello__btn">
+                    <img src="assets/img/ico/tg-plane.svg" alt="">
+                    Войти через Telegram
                 </div>
-            </div>            
-        </div>
-        <div class="autoriz">
-            <div class="container">
-                <img class="back-img" src="assets/img/ico/Group 8.svg" alt="">
-
-                <div class="header">
-                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
-                    <a href=""><img src="assets/img/ico/arrow-left.svg" alt=""></a>
-                </div>
-                <p class="title autoriz__title">Давай познакомимся!</p>
-            </div>
-            <div class="autoriz__bcg quiz__bcg">
-                <div class="container">
-                    <p class="autoriz__alert">Авторизуйтесь через ТГ-Бота</p>
-                    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="TestingTheAppBot" data-size="large" data-userpic="false" data-radius="20" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
-                    <script type="text/javascript">
-                    function onTelegramAuth(user) {
-                        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-                    }
-                    </script>
-                </div>
-            </div>
+            </div>          
         </div>
         
         <div class="introduce">
             <div class="container">
                 <div class="introduce__wrapper">
-                    <img class="back-img back-grey" src="assets/img/ico/back-grey.svg" alt="">
+                    <img class="back-img" src="assets/img/ico/Group8.svg" alt="">
                     <div class="introduce__head">
                         <div class="header">
                             <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
@@ -104,27 +87,31 @@
                         </div>
                         <p class="title introduce__title">Давай познакомимся!</p>
                     </div>
-                    <form action="" method="post" id="username">
-                        <label for="username" class="introduce__input-wrapper">
-                            <span>Ваше имя</span> 
-                            <input type="text" placeholder="User" name="username">
-                        </label>
-                        <button type="submit" class="start__btn quiz__btn" onclick="handleSubmit(event)">
-                            <p>Далее</p>
-                            <img src="assets/img/ico/arrow-right.svg" alt="">
-                        </button>
-                    </form>
                 </div>
             </div>
+            <form action="" method="post" id="username" class="introduce__username">
+                <div class="container">
+                    <label for="username" class="introduce__input-wrapper">
+                        <span>Имя</span> 
+                        <input type="text" placeholder="User" name="username">
+                    </label>
+                    <label for="confidence" class="checkbox">
+                        <input type="checkbox" id="confidence" name="confidence" onchange="toggleCheckbox(this)">
+                        <span class="custom-checkbox"></span>
+                        <span>Согласие на обработку персональных данных</span>
+                    </label>
+                    <button type="submit" class="start__btn quiz__btn" onclick="handleSubmit(event)">
+                        <p>Далее</p>
+                        <img src="assets/img/ico/arrow-right.svg" alt="">
+                    </button>
+                </div>
+            </form>
         </div>
-
         <div class="quiz">
             <div class="container">
                 <div class="header">
                     <img class="logo" src="assets/img/ico/ok-logo-wh.svg" alt="">
-                    <a href="">
-                        <div class="cross-circle"></div>
-                    </a>
+                    <div class="cross-circle"></div>
                 </div>
             </div>
             <img class="orange-chain" src="assets/img/ico/orange-chain.svg" alt="">
@@ -157,16 +144,14 @@
         <div class="result">
             <div class="container">
                 <div class="header">
-                    <img class="logo" src="assets/img/ico/ok-tech-logo.svg" alt="">
+                    <img class="logo" src="assets/img/ico/ok-logo-wh.svg" alt="">
                 </div>
                 <p class="title result__title">Класс! Ты прошел игру и набрал баллов!</p>
             </div>
-            <div class="result__bcg quiz__bcg">
+            <div class="result__wrapper">
                 <div class="container">
-                    <p class="title">Твой подарок</p>
-                    <p class="title title--white">Бутылка воды</p>
-                    <img class="result__img" src="assets/img/bottle.png" alt="">
-                    <p class="result__description">*Покажи фото сотруднику ОК на стойке респешн и получи свой подарок.</p>
+                    <p class="desc orange-txt">Твой подарок <span class="prize">бутылка для воды</span><br>Покажи фото сотруднику ОК на стойке респешн и получи свой подарок.</p>
+                    <img class="result__img" src="assets/img/prize-1.png" alt="">
                 </div>
             </div>
         </div>
