@@ -23,7 +23,7 @@ function handleSubmit(event) {
     radio.checked = true;
 } */
 
-function activateRadio(element) {
+/* function activateRadio(element) {
     const radio = element.querySelector('input[type="radio"]');
   
     radio.checked = true;
@@ -35,7 +35,7 @@ function activateRadio(element) {
     answer.addEventListener('click', function() {
       activateRadio(this);
     });
-  });
+  }); */
   
 /*   function activateNextBtn() {
     const btnNext = document.querySelector('.quiz__btn');

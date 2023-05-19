@@ -333,6 +333,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #000;
+  transition: background-color 0.2s ease;
+}
+.answer:hover {
+  background-color: #FF7700;
+  border-color: #FF7700;
 }
 .answer-wrapper {
   display: flex;
